@@ -31,8 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self setupTitle:@"地区选择"];
-//    self.view
+    self.navigationItem.title = @"切换城市";
     [self setupTableView];
     [self addNotification];
     
@@ -48,7 +47,7 @@
 -(SDCityPickerTableView *)cityTableView{
     if (!_cityTableView){
         //
-        _cityTableView = [[SDCityPickerTableView alloc] initWithFrame:CGRectMake(0, 0, mDeviceWidth, mDeviceHeight-64) style:UITableViewStylePlain];
+        _cityTableView = [[SDCityPickerTableView alloc] initWithFrame:CGRectMake(0,0, mDeviceWidth, mDeviceHeight) style:UITableViewStylePlain];
         _cityTableView.sd_delegate =self;
         
     }
