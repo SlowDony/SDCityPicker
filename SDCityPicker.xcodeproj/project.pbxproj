@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF331FA31F581C55003EE6B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF331FA21F581C55003EE6B8 /* main.m */; };
+		EF331FA61F581C55003EE6B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF331FA51F581C55003EE6B8 /* AppDelegate.m */; };
+		EF331FA91F581C55003EE6B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF331FA81F581C55003EE6B8 /* ViewController.m */; };
+		EF331FAC1F581C55003EE6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF331FAA1F581C55003EE6B8 /* Main.storyboard */; };
+		EF331FAE1F581C55003EE6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF331FAD1F581C55003EE6B8 /* Assets.xcassets */; };
+		EF331FB11F581C55003EE6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF331FAF1F581C55003EE6B8 /* LaunchScreen.storyboard */; };
+		EF331FBC1F581C55003EE6B8 /* SDCityPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF331FBB1F581C55003EE6B8 /* SDCityPickerTests.m */; };
+		EF331FC71F581C55003EE6B8 /* SDCityPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF331FC61F581C55003EE6B8 /* SDCityPickerUITests.m */; };
+		EF6A648F1F58EEAF004C5678 /* SDCityPickerConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A647E1F58EEAF004C5678 /* SDCityPickerConst.m */; };
+		EF6A64901F58EEAF004C5678 /* SDCityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A64811F58EEAF004C5678 /* SDCityPickerViewController.m */; };
+		EF6A64911F58EEAF004C5678 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF6A64831F58EEAF004C5678 /* City.plist */; };
+		EF6A64921F58EEAF004C5678 /* SDCityInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A64851F58EEAF004C5678 /* SDCityInitial.m */; };
+		EF6A64931F58EEAF004C5678 /* SDCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A64871F58EEAF004C5678 /* SDCityModel.m */; };
+		EF6A64941F58EEAF004C5678 /* SDCityPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648A1F58EEAF004C5678 /* SDCityPickerCollectionView.m */; };
+		EF6A64951F58EEAF004C5678 /* SDCityPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648C1F58EEAF004C5678 /* SDCityPickerTableView.m */; };
+		EF6A64961F58EEAF004C5678 /* SDCityPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648E1F58EEAF004C5678 /* SDCityPickerTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF331FB81F581C55003EE6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF331F961F581C55003EE6B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF331F9D1F581C55003EE6B8;
+			remoteInfo = SDCityPicker;
+		};
+		EF331FC31F581C55003EE6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF331F961F581C55003EE6B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF331F9D1F581C55003EE6B8;
+			remoteInfo = SDCityPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF331F9E1F581C55003EE6B8 /* SDCityPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCityPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF331FA21F581C55003EE6B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF331FA41F581C55003EE6B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF331FA51F581C55003EE6B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF331FA71F581C55003EE6B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF331FA81F581C55003EE6B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF331FAB1F581C55003EE6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF331FAD1F581C55003EE6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF331FB01F581C55003EE6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF331FB21F581C55003EE6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF331FB71F581C55003EE6B8 /* SDCityPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDCityPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF331FBB1F581C55003EE6B8 /* SDCityPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerTests.m; sourceTree = "<group>"; };
+		EF331FBD1F581C55003EE6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF331FC21F581C55003EE6B8 /* SDCityPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDCityPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF331FC61F581C55003EE6B8 /* SDCityPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerUITests.m; sourceTree = "<group>"; };
+		EF331FC81F581C55003EE6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF632CEA1F590B3500F4FF58 /* SDMacro_Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMacro_Function.h; sourceTree = "<group>"; };
+		EF6A647D1F58EEAF004C5678 /* SDCityPickerConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerConst.h; sourceTree = "<group>"; };
+		EF6A647E1F58EEAF004C5678 /* SDCityPickerConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerConst.m; sourceTree = "<group>"; };
+		EF6A64801F58EEAF004C5678 /* SDCityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerViewController.h; sourceTree = "<group>"; };
+		EF6A64811F58EEAF004C5678 /* SDCityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerViewController.m; sourceTree = "<group>"; };
+		EF6A64831F58EEAF004C5678 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
+		EF6A64841F58EEAF004C5678 /* SDCityInitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityInitial.h; sourceTree = "<group>"; };
+		EF6A64851F58EEAF004C5678 /* SDCityInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityInitial.m; sourceTree = "<group>"; };
+		EF6A64861F58EEAF004C5678 /* SDCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityModel.h; sourceTree = "<group>"; };
+		EF6A64871F58EEAF004C5678 /* SDCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityModel.m; sourceTree = "<group>"; };
+		EF6A64891F58EEAF004C5678 /* SDCityPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerCollectionView.h; sourceTree = "<group>"; };
+		EF6A648A1F58EEAF004C5678 /* SDCityPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerCollectionView.m; sourceTree = "<group>"; };
+		EF6A648B1F58EEAF004C5678 /* SDCityPickerTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerTableView.h; sourceTree = "<group>"; };
+		EF6A648C1F58EEAF004C5678 /* SDCityPickerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerTableView.m; sourceTree = "<group>"; };
+		EF6A648D1F58EEAF004C5678 /* SDCityPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerTableViewCell.h; sourceTree = "<group>"; };
+		EF6A648E1F58EEAF004C5678 /* SDCityPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF331F9B1F581C55003EE6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FB41F581C55003EE6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FBF1F581C55003EE6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF331F951F581C55003EE6B8 = {
+			isa = PBXGroup;
+			children = (
+				EF331FA01F581C55003EE6B8 /* SDCityPicker */,
+				EF331FBA1F581C55003EE6B8 /* SDCityPickerTests */,
+				EF331FC51F581C55003EE6B8 /* SDCityPickerUITests */,
+				EF331F9F1F581C55003EE6B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF331F9F1F581C55003EE6B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF331F9E1F581C55003EE6B8 /* SDCityPicker.app */,
+				EF331FB71F581C55003EE6B8 /* SDCityPickerTests.xctest */,
+				EF331FC21F581C55003EE6B8 /* SDCityPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF331FA01F581C55003EE6B8 /* SDCityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EF6A647B1F58EE9E004C5678 /* SDCityPicker */,
+				EF331FA41F581C55003EE6B8 /* AppDelegate.h */,
+				EF331FA51F581C55003EE6B8 /* AppDelegate.m */,
+				EF331FA71F581C55003EE6B8 /* ViewController.h */,
+				EF331FA81F581C55003EE6B8 /* ViewController.m */,
+				EF331FAA1F581C55003EE6B8 /* Main.storyboard */,
+				EF331FAD1F581C55003EE6B8 /* Assets.xcassets */,
+				EF331FAF1F581C55003EE6B8 /* LaunchScreen.storyboard */,
+				EF331FB21F581C55003EE6B8 /* Info.plist */,
+				EF331FA11F581C55003EE6B8 /* Supporting Files */,
+			);
+			path = SDCityPicker;
+			sourceTree = "<group>";
+		};
+		EF331FA11F581C55003EE6B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FA21F581C55003EE6B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF331FBA1F581C55003EE6B8 /* SDCityPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FBB1F581C55003EE6B8 /* SDCityPickerTests.m */,
+				EF331FBD1F581C55003EE6B8 /* Info.plist */,
+			);
+			path = SDCityPickerTests;
+			sourceTree = "<group>";
+		};
+		EF331FC51F581C55003EE6B8 /* SDCityPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FC61F581C55003EE6B8 /* SDCityPickerUITests.m */,
+				EF331FC81F581C55003EE6B8 /* Info.plist */,
+			);
+			path = SDCityPickerUITests;
+			sourceTree = "<group>";
+		};
+		EF6A647B1F58EE9E004C5678 /* SDCityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EF6A647C1F58EEAF004C5678 /* SDConfig */,
+				EF6A647F1F58EEAF004C5678 /* SDController */,
+				EF6A64821F58EEAF004C5678 /* SDModel */,
+				EF6A64881F58EEAF004C5678 /* SDView */,
+			);
+			path = SDCityPicker;
+			sourceTree = "<group>";
+		};
+		EF6A647C1F58EEAF004C5678 /* SDConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EF632CEA1F590B3500F4FF58 /* SDMacro_Function.h */,
+				EF6A647D1F58EEAF004C5678 /* SDCityPickerConst.h */,
+				EF6A647E1F58EEAF004C5678 /* SDCityPickerConst.m */,
+			);
+			path = SDConfig;
+			sourceTree = "<group>";
+		};
+		EF6A647F1F58EEAF004C5678 /* SDController */ = {
+			isa = PBXGroup;
+			children = (
+				EF6A64801F58EEAF004C5678 /* SDCityPickerViewController.h */,
+				EF6A64811F58EEAF004C5678 /* SDCityPickerViewController.m */,
+			);
+			path = SDController;
+			sourceTree = "<group>";
+		};
+		EF6A64821F58EEAF004C5678 /* SDModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF6A64831F58EEAF004C5678 /* City.plist */,
+				EF6A64841F58EEAF004C5678 /* SDCityInitial.h */,
+				EF6A64851F58EEAF004C5678 /* SDCityInitial.m */,
+				EF6A64861F58EEAF004C5678 /* SDCityModel.h */,
+				EF6A64871F58EEAF004C5678 /* SDCityModel.m */,
+			);
+			path = SDModel;
+			sourceTree = "<group>";
+		};
+		EF6A64881F58EEAF004C5678 /* SDView */ = {
+			isa = PBXGroup;
+			children = (
+				EF6A64891F58EEAF004C5678 /* SDCityPickerCollectionView.h */,
+				EF6A648A1F58EEAF004C5678 /* SDCityPickerCollectionView.m */,
+				EF6A648B1F58EEAF004C5678 /* SDCityPickerTableView.h */,
+				EF6A648C1F58EEAF004C5678 /* SDCityPickerTableView.m */,
+				EF6A648D1F58EEAF004C5678 /* SDCityPickerTableViewCell.h */,
+				EF6A648E1F58EEAF004C5678 /* SDCityPickerTableViewCell.m */,
+			);
+			path = SDView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF331F9D1F581C55003EE6B8 /* SDCityPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF331FCB1F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPicker" */;
+			buildPhases = (
+				EF331F9A1F581C55003EE6B8 /* Sources */,
+				EF331F9B1F581C55003EE6B8 /* Frameworks */,
+				EF331F9C1F581C55003EE6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDCityPicker;
+			productName = SDCityPicker;
+			productReference = EF331F9E1F581C55003EE6B8 /* SDCityPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF331FB61F581C55003EE6B8 /* SDCityPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF331FCE1F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPickerTests" */;
+			buildPhases = (
+				EF331FB31F581C55003EE6B8 /* Sources */,
+				EF331FB41F581C55003EE6B8 /* Frameworks */,
+				EF331FB51F581C55003EE6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF331FB91F581C55003EE6B8 /* PBXTargetDependency */,
+			);
+			name = SDCityPickerTests;
+			productName = SDCityPickerTests;
+			productReference = EF331FB71F581C55003EE6B8 /* SDCityPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF331FC11F581C55003EE6B8 /* SDCityPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF331FD11F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPickerUITests" */;
+			buildPhases = (
+				EF331FBE1F581C55003EE6B8 /* Sources */,
+				EF331FBF1F581C55003EE6B8 /* Frameworks */,
+				EF331FC01F581C55003EE6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF331FC41F581C55003EE6B8 /* PBXTargetDependency */,
+			);
+			name = SDCityPickerUITests;
+			productName = SDCityPickerUITests;
+			productReference = EF331FC21F581C55003EE6B8 /* SDCityPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF331F961F581C55003EE6B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SlowDony;
+				TargetAttributes = {
+					EF331F9D1F581C55003EE6B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					EF331FB61F581C55003EE6B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF331F9D1F581C55003EE6B8;
+					};
+					EF331FC11F581C55003EE6B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF331F9D1F581C55003EE6B8;
+					};
+				};
+			};
+			buildConfigurationList = EF331F991F581C55003EE6B8 /* Build configuration list for PBXProject "SDCityPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF331F951F581C55003EE6B8;
+			productRefGroup = EF331F9F1F581C55003EE6B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF331F9D1F581C55003EE6B8 /* SDCityPicker */,
+				EF331FB61F581C55003EE6B8 /* SDCityPickerTests */,
+				EF331FC11F581C55003EE6B8 /* SDCityPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF331F9C1F581C55003EE6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF331FB11F581C55003EE6B8 /* LaunchScreen.storyboard in Resources */,
+				EF6A64911F58EEAF004C5678 /* City.plist in Resources */,
+				EF331FAE1F581C55003EE6B8 /* Assets.xcassets in Resources */,
+				EF331FAC1F581C55003EE6B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FB51F581C55003EE6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FC01F581C55003EE6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF331F9A1F581C55003EE6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF331FA91F581C55003EE6B8 /* ViewController.m in Sources */,
+				EF6A64931F58EEAF004C5678 /* SDCityModel.m in Sources */,
+				EF331FA61F581C55003EE6B8 /* AppDelegate.m in Sources */,
+				EF6A64951F58EEAF004C5678 /* SDCityPickerTableView.m in Sources */,
+				EF331FA31F581C55003EE6B8 /* main.m in Sources */,
+				EF6A64941F58EEAF004C5678 /* SDCityPickerCollectionView.m in Sources */,
+				EF6A64901F58EEAF004C5678 /* SDCityPickerViewController.m in Sources */,
+				EF6A64921F58EEAF004C5678 /* SDCityInitial.m in Sources */,
+				EF6A648F1F58EEAF004C5678 /* SDCityPickerConst.m in Sources */,
+				EF6A64961F58EEAF004C5678 /* SDCityPickerTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FB31F581C55003EE6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF331FBC1F581C55003EE6B8 /* SDCityPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF331FBE1F581C55003EE6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF331FC71F581C55003EE6B8 /* SDCityPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF331FB91F581C55003EE6B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF331F9D1F581C55003EE6B8 /* SDCityPicker */;
+			targetProxy = EF331FB81F581C55003EE6B8 /* PBXContainerItemProxy */;
+		};
+		EF331FC41F581C55003EE6B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF331F9D1F581C55003EE6B8 /* SDCityPicker */;
+			targetProxy = EF331FC31F581C55003EE6B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF331FAA1F581C55003EE6B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF331FAB1F581C55003EE6B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF331FAF1F581C55003EE6B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF331FB01F581C55003EE6B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF331FC91F581C55003EE6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF331FCA1F581C55003EE6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF331FCC1F581C55003EE6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SDCityPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF331FCD1F581C55003EE6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SDCityPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF331FCF1F581C55003EE6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SDCityPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDCityPicker.app/SDCityPicker";
+			};
+			name = Debug;
+		};
+		EF331FD01F581C55003EE6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SDCityPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDCityPicker.app/SDCityPicker";
+			};
+			name = Release;
+		};
+		EF331FD21F581C55003EE6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SDCityPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SDCityPicker;
+			};
+			name = Debug;
+		};
+		EF331FD31F581C55003EE6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SDCityPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yimao.SDCityPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SDCityPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF331F991F581C55003EE6B8 /* Build configuration list for PBXProject "SDCityPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF331FC91F581C55003EE6B8 /* Debug */,
+				EF331FCA1F581C55003EE6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF331FCB1F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF331FCC1F581C55003EE6B8 /* Debug */,
+				EF331FCD1F581C55003EE6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF331FCE1F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF331FCF1F581C55003EE6B8 /* Debug */,
+				EF331FD01F581C55003EE6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF331FD11F581C55003EE6B8 /* Build configuration list for PBXNativeTarget "SDCityPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF331FD21F581C55003EE6B8 /* Debug */,
+				EF331FD31F581C55003EE6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF331F961F581C55003EE6B8 /* Project object */;
+}
