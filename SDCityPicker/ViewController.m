@@ -218,6 +218,7 @@
         //获取首字母
         NSMutableArray *indexArr =
         [[cityModels valueForKeyPath:@"firstLetter"] valueForKeyPath:@"@distinctUnionOfObjects.self"];
+        
         //遍历数组
         for (NSString *indexStr in indexArr) {
             

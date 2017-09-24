@@ -25,7 +25,8 @@
 +(instancetype)cityWithDict:(NSDictionary *)dic{
     return [[self alloc]initWithCityDict:dic];
 }
-
+//git rm --cached SDSwift.xcodeproj/project.xcworkspace/xcuserdata/slowdony.xcuserdatad/UserInterfaceState.xcuserstate
+//git commit -m "Removed file that shouldn't be tracked"
 //解档
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     if ([super init]){

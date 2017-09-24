@@ -8,9 +8,6 @@
 
 #import "SDCityPickerViewController.h"
 
-
-
-
 #import "SDCityPickerTableView.h"
 #import "SDCityModel.h"
 
