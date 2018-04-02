@@ -80,14 +80,12 @@ UICollectionViewDataSource
     userInfo[SDCityDidSelectKey] = city;
     [[NSNotificationCenter defaultCenter] postNotificationName:SDCityDidSelectedNotification object:nil userInfo:userInfo];
     
-    
 }
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-
     return CGSizeMake((mDeviceWidth-60)/3, 32);
 }
 

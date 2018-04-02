@@ -11,8 +11,6 @@
 #import "SDCityInitial.h"
 #import "SDCityModel.h"
 
-
-
 #define historyCityFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"historyCity.data"]
 
 @interface ViewController ()
@@ -37,6 +35,7 @@
 
 @property (nonatomic,strong)UIButton *btn; //左按钮
 @property (nonatomic,strong)NSMutableArray *historySelectArr;
+@property (nonatomic,strong)UILabel *label;
 @end
 
 @implementation ViewController
@@ -45,21 +44,41 @@
     [super viewDidLoad];
     self.navigationItem.title = @"城市选择";
     self.view.backgroundColor =[UIColor whiteColor];
+    [self setupUI];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (void)selectCityClick:(UIButton *)sender{
+    
+}
+- (void)setupUI{
+    
+    //
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 100, mDeviceWidth, 50);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor blackColor];
+    
+    label.text = [NSString stringWithFormat:@"当前选择城市:%@",self.historySelectArr.count==0?@"无":((SDCityModel *)self.historySelectArr.firstObject).name] ;
+    label.textAlignment = NSTextAlignmentCenter;
+    self.label = label;
+    label.font = [UIFont systemFontOfSize:17];
+    label.numberOfLines = 1;
+    [self.view addSubview:label];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
     SDCityPickerViewController *city =[[SDCityPickerViewController alloc]init];
     city.cityPickerBlock = ^(SDCityModel *city)
     {
         self.navigationItem.title = city.name;
         [self.historyArr insertObject:city atIndex:0];
         [self setSelectCityModel:city];
-        
+        self.label.text = [NSString stringWithFormat:@"当前选择城市:%@",city.name];
     };
     city.dataArr = [NSMutableArray arrayWithArray:self.dataArr];
     [self.navigationController pushViewController:city animated:YES];
@@ -174,10 +193,6 @@
                                @{@"id":@"4",@"name":@"深圳",@"pid":@"11"},
                                @{@"id":@"4",@"name":@"成都",@"pid":@"11"},
                                @{@"id":@"4",@"name":@"杭州",@"pid":@"11"},
-                               @{@"id":@"4",@"name":@"深圳",@"pid":@"11"},
-                               @{@"id":@"4",@"name":@"成都",@"pid":@"11"},
-                               @{@"id":@"4",@"name":@"杭州",@"pid":@"11"},
-                               
                                ];
         NSMutableArray *hotarrs =[NSMutableArray array];
         

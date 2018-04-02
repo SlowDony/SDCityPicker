@@ -23,6 +23,7 @@
 		EF6A64941F58EEAF004C5678 /* SDCityPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648A1F58EEAF004C5678 /* SDCityPickerCollectionView.m */; };
 		EF6A64951F58EEAF004C5678 /* SDCityPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648C1F58EEAF004C5678 /* SDCityPickerTableView.m */; };
 		EF6A64961F58EEAF004C5678 /* SDCityPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A648E1F58EEAF004C5678 /* SDCityPickerTableViewCell.m */; };
+		EFEA0C962072739300B553E6 /* SDCityPicker.gif in Resources */ = {isa = PBXBuildFile; fileRef = EFEA0C952072739300B553E6 /* SDCityPicker.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EF6A648C1F58EEAF004C5678 /* SDCityPickerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerTableView.m; sourceTree = "<group>"; };
 		EF6A648D1F58EEAF004C5678 /* SDCityPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCityPickerTableViewCell.h; sourceTree = "<group>"; };
 		EF6A648E1F58EEAF004C5678 /* SDCityPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCityPickerTableViewCell.m; sourceTree = "<group>"; };
+		EFEA0C952072739300B553E6 /* SDCityPicker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SDCityPicker.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		EF6A647C1F58EEAF004C5678 /* SDConfig */ = {
 			isa = PBXGroup;
 			children = (
+				EFEA0C952072739300B553E6 /* SDCityPicker.gif */,
 				EF632CEA1F590B3500F4FF58 /* SDMacro_Function.h */,
 				EF6A647D1F58EEAF004C5678 /* SDCityPickerConst.h */,
 				EF6A647E1F58EEAF004C5678 /* SDCityPickerConst.m */,
@@ -330,6 +333,7 @@
 				EF6A64911F58EEAF004C5678 /* City.plist in Resources */,
 				EF331FAE1F581C55003EE6B8 /* Assets.xcassets in Resources */,
 				EF331FAC1F581C55003EE6B8 /* Main.storyboard in Resources */,
+				EFEA0C962072739300B553E6 /* SDCityPicker.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
