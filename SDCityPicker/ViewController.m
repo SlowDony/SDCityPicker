@@ -6,6 +6,15 @@
 //  Copyright © 2017年 SlowDony. All rights reserved.
 //
 
+/*
+ github地址:https://github.com/SlowDony/SDCityPicker
+ 城市选择器
+ 
+ 我的邮箱：devslowdony@gmail.com
+ 
+ 如果有好的建议或者意见 ,欢迎指出 , 您的支持是对我最大的鼓励,谢谢. 求STAR ..😆
+ */
+
 #import "ViewController.h"
 #import "SDCityPickerViewController.h"
 #import "SDCityInitial.h"
@@ -133,7 +142,6 @@
 
 /**
  定位选择
- 
  */
 -(NSMutableArray *)selectArr{
     if (!_selectArr){
@@ -153,7 +161,6 @@
 
 /**
  历史
- 
  */
 -(NSMutableArray *)historyArr{
     if (!_historyArr){
@@ -179,7 +186,6 @@
 
 /**
  热门
- 
  */
 -(NSMutableArray *)hotArr{
     if(!_hotArr){
@@ -204,17 +210,13 @@
         [_hotArr addObject:cityInitial];
     }
     return _hotArr;
-    
 }
-
 
 -(NSMutableArray *)dataArr{
     if (!_dataArr){
         
         _dataArr =[NSMutableArray array];
-        
-        
-        
+ 
         NSString *path =[[NSBundle mainBundle]pathForResource:@"City" ofType:@"plist"];
         
         
@@ -243,19 +245,14 @@
             for ( SDCityModel *cityModel in cityModels) {
                 if ([indexStr isEqualToString:cityModel.firstLetter]) {
                     [cityArrs addObject:cityModel];
-                    
                 }
             }
             cityInitial.cityArrs = cityArrs;
             [_dataArr addObject:cityInitial];
         }
-        
-        
         [_dataArr insertObjects:self.hotArr atIndexes:[NSIndexSet indexSetWithIndex:0]];
         [_dataArr insertObjects:self.historyArr atIndexes:[NSIndexSet indexSetWithIndex:0]];
         [_dataArr insertObjects:self.selectArr atIndexes:[NSIndexSet indexSetWithIndex:0]];
-        
-        
     }
     return _dataArr;
 }

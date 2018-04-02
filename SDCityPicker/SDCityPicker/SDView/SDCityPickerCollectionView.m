@@ -6,11 +6,21 @@
 //  Copyright © 2017年 SlowDony. All rights reserved.
 //
 
+/*
+ github地址:https://github.com/SlowDony/SDCityPicker
+ 城市选择器
+ 
+ 我的邮箱：devslowdony@gmail.com
+ 
+ 如果有好的建议或者意见 ,欢迎指出 , 您的支持是对我最大的鼓励,谢谢. 求STAR ..😆
+ */
+
 #import "SDCityPickerCollectionView.h"
 
 #define SDCityPickerCellID @"SDCityPickerCellID"
 
 #import "SDCityModel.h"
+
 @interface SDCityPickerCollectionView ()
 <
 UICollectionViewDelegate,
