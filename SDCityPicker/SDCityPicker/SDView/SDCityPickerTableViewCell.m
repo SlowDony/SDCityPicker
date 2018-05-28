@@ -42,6 +42,7 @@
     if (cell == nil) {
         
         cell =[[SDCityPickerTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     return cell;

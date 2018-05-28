@@ -10,8 +10,8 @@
  github地址:https://github.com/SlowDony/SDCityPicker
  城市选择器
  
- 我的邮箱：devslowdony@gmail.com
- 
+ 我的邮箱:devslowdony@gmail.com
+ 新浪微博:slowdony
  如果有好的建议或者意见 ,欢迎指出 , 您的支持是对我最大的鼓励,谢谢. 求STAR ..😆
  */
 
@@ -70,6 +70,7 @@
     if (cell == nil) {
         
         cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     SDCityPickerTableViewCell *cityCell = [SDCityPickerTableViewCell cellWithTableView:self];
@@ -78,7 +79,7 @@
     SDCityInitial *cityInitial = self.dataArray[indexPath.section];
     
     if (cityInitial.cityArrs.count ==0){
-        return cell;
+        return cityCell;
     }else {
         SDCityModel *city = cityInitial.cityArrs[indexPath.row];
         
@@ -158,7 +159,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     SDCityInitial *cityInitial = self.dataArray[section];
 
-    return (cityInitial.cityArrs.count)==0 ? 0:50;
+    return (cityInitial.cityArrs.count)==0 ? 0.1:50;
     
 }
 
@@ -181,6 +182,9 @@
     headlabel.numberOfLines = 1;
     [headview addSubview:headlabel];
     
+    if (cityInitial.cityArrs.count==0){
+        return [[UIView alloc]init];
+    }
     return headview;
 }
 

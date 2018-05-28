@@ -10,7 +10,8 @@
  github地址:https://github.com/SlowDony/SDCityPicker
  城市选择器
  
- 我的邮箱：devslowdony@gmail.com
+ 我的邮箱:devslowdony@gmail.com
+ 新浪微博:slowdony
  
  如果有好的建议或者意见 ,欢迎指出 , 您的支持是对我最大的鼓励,谢谢. 求STAR ..😆
  */
